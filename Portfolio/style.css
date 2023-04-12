@@ -7,6 +7,11 @@
     --ternary: #898989;
     --light:#F2F2F2;
     --secondary:#070606;
+    --cont:#5a5757;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -476,28 +481,98 @@ section.contact .card-wrapper .card img{
 }
 section.contact .container .card-wrapper .card h1{
     font-weight:400;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 section.contact .container .card-wrapper .card h6{
     font-size: 1rem;
     color:var(--ternary);
     font-weight:400;
+    margin-bottom: 3rem;
+
 }
 
 section.contact .input-wrap{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    margin-bottom:2rem;
 }
 
 section.contact .input-wrap-2{
     display: flex;
     flex-direction: column;
 }
+
 section.contact .input-wrap-2 input{
     margin-bottom: 2rem;
+
 }
-section.contact .input{
+
+section.contact input{
     padding:0.5rem;
+    border: 1px solid var(--cont);
+    font-size: 0.9rem;
 }
+
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border: 1px solid var(--cont);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background:black;
+    text-align: center;
+    padding:3rem 0;
+}
+ footer .footer-logo{
+    margin-bottom: 2rem;
+    width: 245px;
+ }
+
+ footer .footer-socials a{
+    margin-right: 1rem;
+ }
+
+ footer .footer-socials{
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+ }
+ footer .copyright{
+    color: var(--ternary);
+ }
+
+ @media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+ }
+
+ .site-main-wrapper{
+    position:relative;
+ }
+
+ .hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+ }
+
+ .hamberger img{
+    width:30px ;
+ }
