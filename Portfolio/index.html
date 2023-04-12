@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./logo.png" type="image/x-icon">
-    <title>MY PORTFOLIO</title>  
+    <title>Jael.</title>  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:ital,wght@1,100&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Lato&family=Poppins:ital,wght@1,100&family=Russo+One&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
+   <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="./Portrait Drawing/hamberger.png" alt="">
+        </button>
+
+        <div class="mobile-nav"></div>
+
+    <header>
         <div class="container">
-            <nav class="flex items-center justify-between">
+            <nav id="main-nav"class="flex items-center justify-between">
                 <div class="left flex items-center">
                     <div class="branding">
                         <img src="./Jæl..png" alt="">
@@ -22,10 +29,10 @@
                             <div>
                         
                                 <a href="#">Home</a>
-                                <a href="#">About</a>
-                                <a href="#">Artworks</a>
-                                <a href="#">Pages</a>
-                                <a href="#">Gallery</a>
+                                <a href="#about">About</a>
+                                <a href="#artworks">Artworks</a>
+                                <a href="#hobbies">Hobbies</a>
+                                <a href="#gallery">Gallery</a>
                             </div>
                 </div> 
 
@@ -60,7 +67,7 @@
     </header>
 
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container flex items-center">
             <div class="flex-1">
                 <img class="about-me-img"src="./Student.jpg" alt="">
@@ -100,7 +107,7 @@
             </div>
         </div>
     </section>
-    <section class="artworks">
+    <section id="artworks" class="artworks">
         <div class="container">
             <h1 class="section-heading"><span>My</span> Artworks</h1>
             <p>
@@ -203,7 +210,7 @@
         </div>
     </section>
 
-    <section class="hobbies">
+    <section id="hobbies" class="hobbies">
         <div class="container">
             <h1 class="qsection-heading"><span>My</span> Hobbies</h1>
             <p>"The best way to predict your future is to create it." - Abraham Lincoln</p>
@@ -261,7 +268,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
             <div class="container">
                 <h1 class="qsection-heading"><span>My</span> Gallery</h1>
                 <p>“Be yourself, there's no one better.”</p>
@@ -372,20 +379,42 @@
                     <h6>@DraNyel12</h6>
                 </div>
             </div>
+
+
             <form action="">
-        <div class="input-wrap">
-            <input type="text" placeholder="Your Name *">
-            <input type="email" placeholder="Your Email *">
-        </div>
-        <div class="input-wrap-2">
-            <input type="text" placeholder="Your Subject...">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message...">
-        </div>
-        <div>
-            <button class="btn btn-primary">send message</button>
-        </div></form>
+
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name *">
+                    <input type="email" placeholder="Your Email *">
+                </div>
+
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Your Subject...">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="btn btn-primary">Send message</button>
+                </div>
+
+            </form>
+
+
         </div>
     
     </section>
+
+    <footer>
+        <img class="footer-logo" src="./Jæl._2.png" alt="">
+        <div class="footer-socials">
+            <a href="#"><img src="./icons8-facebook-f.svg" alt=""></a>
+            <a href="#"><img src="./icons8-instagram.svg" alt=""></a>
+            <a href="#"><img src="./icons8-youtube.svg" alt=""></a>
+        </div>
+        <div class="copyright">
+            Copyright 2023 © Jael.GadreelDranyel. All Right Reserved.
+        </div>
+    </footer>
+   </div>
 </body>
 </html>
